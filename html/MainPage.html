@@ -3,28 +3,42 @@
 
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WHORIEND</title>
         <link rel="stylesheet" href="../css/style.css">
         <style>
-            header {
-                width: 100%;
-                background-color: aliceblue;
-                height: 20%;
-
+            nav {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                height: 50px;
+                justify-content: center;
             }
 
             main {
-                width: 100%;
-                background-color: rgb(254, 255, 190);
+                margin-top: 2%;
+                display: table;
+                height: 800px;
+                width: 89%;
+                margin-left: 5.5%;
+                margin-right: 5.5%;
+                border: 1px solid #999;
             }
 
             footer {
-                background-color: aliceblue;
+                margin-top: 10px;
                 height: 100px;
-                flex-direction: column;
+                display: table;
+                margin: auto;
+            }
+
+            footer>span {
+                display: table-cell;
+                vertical-align: middle;
             }
 
             img {
+                width: 80%;
                 display: block;
                 margin: auto;
             }
@@ -34,23 +48,30 @@
     <body>
         <header>
             <div class="title_parent">
-                <div class="profile"></div>
+                <div class="profile">profile</div>
                 <div class="title">
                     <a href="./MainPage.html">
-                        <img src="../img/mainlogo.png" width=50% height=50%>
+                        <img src="../img/mainlogo.png" width=50% height=50% vertical-align: middle;>
                     </a>
                 </div>
-                <div class="message"></div>
+                <div class="message">message</div>
             </div>
         </header>
-        <div>
-            <main>
-                <div>메인</div>
-            </main>
-            <footer>
-                <div>하단</div>
-            </footer>
-        </div>
+        <nav>
+            <select class="category">
+                <option selected>카테고리</option>
+                <option>옵션1</option>
+                <option>옵션2</option>
+                <option>옵션3</option>
+                <option>옵션4</option>
+            </select>
+        </nav>
+        <main>
+            메인 영역
+        </main>
+        <footer>
+            <span>하단 영역</span>
+        </footer>
     </body>
 
 </html>
