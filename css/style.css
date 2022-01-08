@@ -1,3 +1,18 @@
+@font-face {
+    font-family: '나눔스퀘어_라이트';
+    src : url(../font/NanumSquareL.ttf);
+}
+
+@font-face {
+    font-family: '나눔스퀘어_레귤러';
+    src : url(../font/NanumSquareR.ttf);
+}
+
+@font-face {
+    font-family: '나눔스퀘어_볼드';
+    src : url(../font/NanumSquareB.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -34,18 +49,6 @@
     align-items: flex-start;
 }
 
-.left h1{
-    font-family: "facebook letter faces";
-    font-size: 60px;
-    color: #ff5e00;
-}
-
-.left p{
-    font-size: 20px;
-    color:#443f3b;
-    height: 200px;
-}
-
 .right{
     width:400px;
 }
@@ -71,7 +74,7 @@ form input{
 }
 
 .loginBtn{
-    background-color: #1a0900;
+    background-color: #97A39D;
     padding: 15px;
     text-align: center;
     text-decoration: none;
@@ -85,14 +88,14 @@ form input{
 }
 
 .loginBtn:hover{
-    background-color: #ff5e00;
+    background-color: #829289;
 }
 
 .forget{
     margin: 15px 0;
     text-decoration: none;
-    color: #ff5e00;
-    font-family: 'Arial';
+    color: #2DB400;
+    font-family: '나눔스퀘어_볼드';
     font-size: 14px;
 }
 
@@ -105,7 +108,7 @@ form input{
 }
 
 .signupBtn{
-    background-color: #4d8f3c;
+    background-color: #04CF5C;
     padding: 15px;
     text-align: center;
     text-decoration: none;
@@ -118,7 +121,7 @@ form input{
 }
 
 .signupBtn:hover{
-    background-color: #3f7432;
+    background-color: #2EB500;
 }
 
 .right p{
@@ -154,10 +157,10 @@ form input{
 
 .profile{
     width: 12%;
-    padding-bottom: 10%;
-    border: 1px solid #999; 
     text-align: center;
-    
+    border: 0;
+    outline: 0;
+    background-color : transparent
 }
 
 .title{
@@ -166,10 +169,10 @@ form input{
 
 .message{
     width: 12%;
-    padding-bottom: 10%;
-    border: 1px solid #999;
     text-align: center; 
-    
+    border: 0;
+    outline: 0;
+    background-color : transparent
 }
 
 nav ul{
