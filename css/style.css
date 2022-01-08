@@ -141,3 +141,8 @@ form input{
         height: 75px;
     }
 }
+
+.title_parent{
+    display: flex;
+}
+
