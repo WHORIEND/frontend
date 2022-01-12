@@ -28,6 +28,15 @@
     background-color: #f0f2f5;
 }
 
+.regBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
 .container{
     width:100%;
     height:100%;
@@ -51,6 +60,15 @@
 
 .right{
     width:400px;
+}
+
+.title-area, .signup-area{
+    width:400px;
+}
+
+.title-area{
+    height:100px;
+    margin-bottom: 20px;
 }
 
 form{
@@ -87,8 +105,39 @@ form input{
     transition: 0.5s;
 }
 
+
 .loginBtn:hover{
     background-color: #a0a0a0;
+}
+
+.BacktoLoginPage{
+    text-decoration-line: none; 
+    font-family: '나눔스퀘어_레귤러'; 
+    color: #646464;
+}
+
+.BacktoLoginPage:hover{
+    color:black
+}
+
+.CompleteSignupBtn{
+    background-color: #04CF5C;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Arial';
+    font-weight: 700;
+    transition: 0.5s;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.CompleteSignupBtn:hover{
+    background-color: #2EB500;
 }
 
 .forget{
@@ -213,7 +262,6 @@ nav ul li{
    
 }
 
-
 select { 
     width: 200px; /* 원하는 너비설정 */ 
     padding: .8em .5em; /* 여백으로 높이 설정 */ 
@@ -225,19 +273,4 @@ select {
     -moz-appearance: none; 
     appearance: none; 
     outline:none;
-}
-
-div[class="sidebar"] {
-    width:300px;
-    height: 100%;
-    background: #222;
-    position: fixed;
-    top:0;
-    left:-300px;
-    z-index:1;
-    transition:all .35s;
-}
-
-input[id="profile"]:checked + div {
-   left: 0;
 }
